@@ -1,0 +1,196 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #f7f7f7, #e6e6e6); /* Light gradient background for the body */
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient header background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.header-container p {
+    font-size: 1.2em;
+}
+
+/* Content Styles */
+.content {
+    display: flex;
+    justify-content: center;
+    padding: 40px 10px;
+}
+.content-container a:hover {
+    color:#feb47b;
+}
+.content-container h2, h3, strong {
+    color:#ff7e5f;
+}
+
+.content-container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.content-container h2,
+.content-container h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.content-container p,
+.content-container ul {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.content-container ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+/* Video Container Styles */
+.video-container {
+    max-width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+    .video-container iframe {
+        width: 80%; /* Adjust video to 80% of the container width for larger screens */
+        max-width: 1000px; /* Set a max-width for larger screens */
+        height: 450px; /* Set a fixed height for the video on larger screens */
+    }
+}
+
+/* Mobile Styles - No change here */
+@media (max-width: 768px) {
+    .video-container iframe {
+        width: 100%;
+        height: 200px; /* Set a height that looks good on mobile devices */
+    }
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient footer background */
+    color: #333;
+    padding: 20px 0;
+}
+
+.footer-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-container nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-container nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-container nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-container nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 20px; /* Space between footer text and links */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .footer-container {
+        text-align: center;
+    }
+
+    .footer-container nav ul {
+        display: flex; /* Make the nav links appear side by side */
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .footer-container nav ul li {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    .footer-container nav ul li a {
+        font-size: 1em; /* Ensure readability on small screens */
+    }
+
+    .footer-text {
+        margin-bottom: 10px;
+    }
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container h1 {
+        font-size: 2em;
+    }
+
+    .header-container p {
+        font-size: 1em;
+    }
+
+    .content-container h2 {
+        font-size: 1.8em;
+    }
+
+    .content-container p {
+        font-size: 1em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+
+    .footer-container nav ul {
+        text-align: center;
+    }
+
+    .footer-container nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
